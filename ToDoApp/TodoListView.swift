@@ -55,8 +55,11 @@ struct TodoListView: View {
                     }
                     .onDelete(perform: deleteTodo)
                 }
-            }.padding()
+            }
+            .padding()
+            .navigationTitle("Oppgaver \(todos.count)")
         }
+
     }
 }
 
